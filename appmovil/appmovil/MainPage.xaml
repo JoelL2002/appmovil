@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appmovil.MainPage">
+
+    <StackLayout Margin="10"
+                 BackgroundColor="AliceBlue">
+
+        <Label Text ="Desglosador"
+               Margin="10,10,20,0"
+               FontSize="30"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"> </Label>
+        
+        <Grid HorizontalOptions="CenterAndExpand"
+              VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+      
+            <Label Text="Tipo de moneda"
+         Grid.Column = "0"
+         Grid.Row = "1"/>
+            
+         <Entry Text ="Q" x:Name="moneda" IsReadOnly="True"
+         Grid.Column = "1"
+         Grid.Row = "3" BackgroundColor="White"
+                />
+            
+            <Button Text = "Quetzal" Clicked ="Button_Clicked_1"
+         Grid.Column = "1"
+         Grid.Row = "1"
+                    Font="7.9"/>
+            <Button Text = "Dolar" Clicked ="Button_Clicked_2"
+        Grid.Column="2"
+        Grid.Row = "1"
+                    Font="7.9"/>
+
+            <Label Text = "Ingrese la cantidad"
+        Grid.Column = "0"
+        Grid.Row = "3"/>
+            <Entry x:Name = "dato"
+        Grid.Column = "2"
+        Grid.Row = "3" 
+        Keyboard="Numeric"
+                   BackgroundColor="White"/>
+       <Button Text="Calcular" Clicked="Button_Clicked"
+        Grid.Column = "3"
+        Grid.Row = "3"
+               Font="7.25"/>
+
+            <Button Text="Vaciar" Clicked="Button_Clicked_3"
+                    Grid.Column="4"
+                    Grid.Row="3"
+                    Font="7.25"/>
+
+            <Label Text="200"
+                   Grid.Column="0"
+                   Grid.Row ="5"/>
+            <Entry x:Name="b200" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="5"
+                   BackgroundColor="White"/>
+
+            <Label Text="100"
+                   Grid.Column="3"
+                   Grid.Row ="5"/>
+            <Entry x:Name="b100" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="5"
+                   BackgroundColor="White"/>
+
+            <Label Text="50"
+                   Grid.Column="0"
+                   Grid.Row ="6"/>
+            <Entry x:Name="b50" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="6"
+                   BackgroundColor="White"/>
+
+            <Label Text="20"
+                   Grid.Column="3"
+                   Grid.Row ="6"/>
+            <Entry x:Name="b20" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="6"
+                   BackgroundColor="White"/>
+
+            <Label Text="10"
+                   Grid.Column="0"
+                   Grid.Row ="7"/>
+            <Entry x:Name="b10" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="7"
+                   BackgroundColor="White"/>
+
+            <Label Text="5"
+                   Grid.Column="3"
+                   Grid.Row ="7"/>
+            <Entry x:Name="b5" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="7"
+                   BackgroundColor="White"/>
+
+            <Label Text="1"
+                   Grid.Column="0"
+                   Grid.Row ="8"/>
+            <Entry x:Name="b1" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="8"
+                   BackgroundColor="White"/>
+
+            <Label Text="0.50"
+                   Grid.Column="3"
+                   Grid.Row="8"/>
+            <Entry x:Name="m50" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="8"
+                    BackgroundColor="White"/>
+
+            <Label Text="0.25"
+                   Grid.Column="0"
+                   Grid.Row="9"/>
+            <Entry x:Name="m25" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="9"
+                    BackgroundColor="White"/>
+
+            <Label Text="0.10"
+                   Grid.Column="3"
+                   Grid.Row="9"/>
+            <Entry x:Name="m10" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="9"
+                    BackgroundColor="White"/>
+
+            <Label Text="0.05"
+                   Grid.Column="0"
+                   Grid.Row="10"/>
+            <Entry x:Name="m5" IsReadOnly="True"
+                   Grid.Column="1"
+                   Grid.Row="10"
+                    BackgroundColor="White"/>
+
+            <Label Text="0.01"
+                   Grid.Column="3"
+                   Grid.Row="10"/>
+            <Entry x:Name="m1" IsReadOnly="True"
+                   Grid.Column="4"
+                   Grid.Row="10"
+                    BackgroundColor="White"/>
+
+
+        </Grid>
+        <Entry Text="" x:Name="porsidolar"
+               FontSize="15"
+               IsReadOnly="True"></Entry>
+        <Entry Text="" x:Name="porsidolar2"
+               FontSize="15" IsReadOnly="True"></Entry>
+    </StackLayout>
+</ContentPage>
+    
+    
+    
